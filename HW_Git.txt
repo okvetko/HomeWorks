@@ -1,0 +1,201 @@
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash. 
+ 4. Создать внешний репозиторий c названием JSON === на вкладке "Repositories" нажать кнопку "New", на открывшейся странице написать имя репозитория "JSON", 
+ выбрать radiobutton "Public" и нажать "Create repository"
+ 5. Клонировать репозиторий JSON на локальный компьютер === в репозитории "JSON" нажать кнопку "Code", скопировать HTTPS в буфер обмена, на локальном компьютере открыть
+ Git Bash в папке, где должен находится создаваемый репозиторий, написать команду git clone (git clone https://github.com/okvetko/JSON.git).
+ 6. Внутри локального JSON создать файл “new.json” ===  touch new.json
+77. Добавить файл под гит === 
+    git status 
+	git add new.json
+ 8. Закоммитить файл === git commit -m "add new.json"
+ 9. Отправить файл на внешний GitHub репозиторий === git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). 
+ Всё написать в формате JSON === vim new.json
+ {
+        "name":"Olya",
+        "age":34,
+        "Pets":2,
+        "Salary":300
+}
+ 11. Отправить изменения на внешний репозиторий === 
+     git status
+     git add new.json
+     git commit -m "add new information"
+     git push
+ 12. Создать файл preferences.json ===  touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, 
+ любимое время года, сторона которую хотели бы посетить) в формате JSON === vim preferences.json
+ {
+        "FavoriteMovie":"Harry Potter",
+        "FavoriteSeries":"Dr.House",
+        "FavoriteFood":"Kubdari",
+        "FavoriteSeason":"Spring",
+        "CountryToVisit":"New Zeland"
+}
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON === 
+ touch skills.json
+ {
+        "Documentation":["Bug reports", "Check Lists"],
+        "APITesting":"Postman",
+        "Terminal":"GitBush",
+        "Emulator":"AndroidStudio",
+        "TrafficSniffing":["Charlies", "Fiddler"],
+        "DevTools":["Google Chrome", "FireFox"],
+        "DataBase":"MySQL",
+        "StressTesting":"Jmeter"
+}
+ 15. Отправить сразу 2 файла на внешний репозиторий === 
+ git status
+ git add .
+ git commit -m "add preferences and skills"
+ git push
+ 16. На веб интерфейсе создать файл bug_report.json === в репозитории JSON нажать "Add file" - "Create new file", 
+ добавить bug_report.json
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать "Commit new file"
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON ===
+ {
+  "ID":123,
+  "Summary":"The product catalog in the 'Product Catalog' tab remains in Russian when switching to English",
+  "Environment":["Windows 10", "Chrome 97.0.4692.71"],
+  "StepsToReproduce":["1.Go to Product Catalog tab", "2.Switch the language to English by clicking the 'Eng' button"],
+  "ExpectedResult":"Product catalog is displayed in English",
+  "ActualResult":"Product catalog is displayed in Russian",
+  "Severity":"Medium",
+  "Priority":"High",
+  "ReportedBy":"OKvetko",
+  "AssignedTo":"Developer",
+  "Status":"Open",
+  "Attachment":"new.png"
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать на кнопку "Commit changes"
+ 20. Синхронизировать внешний и локальный репозиторий JSON === git pull
+ 21. Создать внешний репозиторий c названием XML === на вкладке "Repositories" нажать кнопку "New", на открывшейся 
+ странице написать имя репозитория "XML",  выбрать radiobutton "Public" и нажать "Create repository"
+ 22. Клонировать репозиторий XML на локальный компьютер ===
+ в репозитории "XML" нажать кнопку "Code", скопировать HTTPS в буфер обмена, на локальном компьютере открыть
+ Git Bash в папке, где должен находится создаваемый репозиторий, написать команду git clone 
+ (git clone https://github.com/okvetko/XML.git).
+ 23. Внутри локального XML создать файл “new.xml” ===
+ перейти в папку XML (cd /e/QA/Git/XML)
+ touch new.xml
+ 24. Добавить файл под гит ===
+ git status
+ git add .
+  25. Закоммитить файл === git commit -m "add new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий === git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе 
+ (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML ===
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<name>Olga</name>
+<age>34</age>
+<pets>2</pets>
+<salary>300</salary>
+</root>
+ 28. Отправить изменения на внешний репозиторий === 
+ git add new.xml
+ git commit -m "add information"
+ git push
+ 29. Создать файл preferences.xml === touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, 
+ любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML ===
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<FavoriteMovie>Harry Potter</FavoriteMovie>
+<FavoriteSeries>Dr. House</FavoriteSeries>
+<FavoriteFood>Kubdari</FavoriteFood>
+<CountryToVisit>New Zeland</CountryToVisit>
+</root>
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML ===
+ touch skills.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<Skills>
+        <Documentation>Bug reports, Check lists</Documentation>
+        <APITesting>Postman</APITesting>
+        <Terminal>GitBush</Terminal>
+        <Emulator>Android Studio</Emulator>
+        <TrafficSniffing>Charlies, Fiddler</TrafficSniffing>
+        <DevTools>Google Chrome, FireFox</DevTools>
+        <DataBase>MySQL</DataBase>
+        <StressTesting>Jmeter</StressTesting>
+</Skills>
+ 32. Сделать коммит в одну строку ===  git add skills.xml preferences.xml && git commit -m "add preferences and skills"
+ 33. Отправить сразу 2 файла на внешний репозиторий === git push
+ 34. На веб интерфейсе создать файл bug_report.xml === add file, create new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе === bug_report.xml commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML ===
+<?xml version="1.0" encoding="UTF-8" ?>
+<Bugreport>
+  <ID>123</ID>
+  <Summary>The product catalog in the "Product Catalog" tab remains in Russian when switching to English</Summary>
+  <Environment>Windows 10, Chrome 97.0.4692.71</Environment>
+  <StepsToReproduce>1.Go to Product Catalog tab, 2.Switch the language to English by clicking the "Eng" button"</StepsToReproduce>
+  <ExpectedResult>Product catalog is displayed in English</ExpectedResult>
+  <ActualResult>Product catalog is displayed in Russian</ActualResult>
+  <Severity>Medium</Severity>
+  <Priority>High</Priority>
+  <ReportedBy>OKvetko</ReportedBy>
+  <AssignedTo>Developer</AssignedTo>
+  <Status>Open</Status>
+  <Attachment>new.png</Attachment>
+</Bugreport>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе === commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML === git pull
+ TXT
+ 1. Создать внешний репозиторий c названием TXT === new, create repository
+ 2. Клонировать репозиторий TXT на локальный компьютер === git clone https://github.com/okvetko/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt” === touch new.txt
+ 4. Добавить файл под гит === git add .
+ 5. Закоммитить файл ===  git commit -m "add new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий === git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе 
+ (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT ===
+Name - Olga
+Age - 34
+Pets - 2
+Salary - 300
+ 8. Отправить изменения на внешний репозиторий === 
+ git add . 
+ git commit -m "add new.txt"
+ git push
+ 9. Создать файл preferences.txt === touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, 
+ любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT ===
+Favorite Movie - Harry Potter
+Favorite Series - Dr.House
+Favorite Food - Kubdari
+Favorite Season - Spring
+Country To Visit - New Zeland
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT ===
+touch skills.txt
+Documentation - Bug reports, Check Lists
+API Testing - Postman
+Terminal - GitBush
+Emulator - Android Studio
+Traffic Sniffing - Charlies, Fiddler
+DevTools - Google Chrome, FireFox
+DataBase - MySQL
+Stress Testing - Jmeter
+ 12. Сделать коммит в одну строку === git add . && git commit -m "add preferences.txt, skills.txt"
+ 13. Отправить сразу 2 файла на внешний репозиторий === git push
+ 14. На веб интерфейсе создать файл bug_report.txt === add file, create new.file
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе === commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT ===
+  ID - 123
+  Summary - The product catalog in the "Product Catalog" tab remains in Russian when switching to English
+  Environment - Windows 10, Chrome 97.0.4692.71
+  Steps To Reproduce - 
+      1.Go to "Product Catalog" tab
+      2.Switch the language to English by clicking the "Eng" button
+  Expected Result - Product catalog is displayed in English
+  Actual Result - Product catalog is displayed in Russian
+  Severity - Medium
+  Priority - High
+  Reported By - OKvetko
+  Assigned To - Developer
+  Status - Open 
+  Attachment - new.png
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе === Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT === git pull

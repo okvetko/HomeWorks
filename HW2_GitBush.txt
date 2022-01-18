@@ -1,0 +1,39 @@
+1) Посмотреть где я === pwd
+2) Создать папку === mkdir folder_2
+3) Зайти в папку === cd folder_2
+4) Создать 3 папки === mkdir f_1 f_2 f_3
+5) Зайти в любоую папку === cd e/test/folder_2/f_1
+6) Создать 5 файлов (3 txt, 2 json) === touch firsttxt.txt secondtxt.txt thirdtxt.txt first.json second.json
+7) Создать 3 папки === mkdir f_1.1 f_1.2 f_1.3
+8) Вывести список содержимого папки === ls -la
+9) + Открыть любой txt файл === vim firsttxt.txt
+10) + написать туда что-нибудь, любой текст ===  
+      i 
+      first lesson gitbush
+11) + сохранить и выйти ===
+	  esc
+	  :wq
+12) Выйти из папки на уровень выше === cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку === mv first.json second.json /e/test/folder_2/f_2
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку === cp first.json second.json /e/test/folder_2/f_3
+15) Найти файл по имени === /bin/find . -name "first.json"
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает === tail -f "test.txt" | grep "err"
+17) вывести несколько первых строк из текстового файла === head -n3 test.txt
+18) вывести несколько последних строк из текстового файла === tail -n3 test.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает === less test.txt
+20) вывести дату и время === date "+%A %B %Y %T"
+
+1)  отправить http запрос на сервер === curl "http://162.55.220.72:5005/terminal-hw-request"
+2) написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 ===
+   touch script
+   vim script
+       {#!/bin/bash
+	   cd /e/test 
+	   mkdir foulder_1 foulder_2 foulder_3 
+	   cd /e/test/foulder_1 
+	   touch first.json second.json first.txt second.txt third.txt 
+	   mkdir f_1 f_2 f_3
+	   ls -la
+	   mv first.json second.json /e/test/foulder_2}
+	chmod ugo+x ./script 
+    ./script 	
